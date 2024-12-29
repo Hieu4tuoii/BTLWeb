@@ -60,13 +60,13 @@ namespace BTLWebCoBan.GiaoDien.USER
         protected global::System.Web.UI.HtmlControls.HtmlAnchor danhMucTaiNgheKhongDay;
 
         /// <summary>
-        /// danhMucTaiNgheChongOn control.
+        /// phuKienTaiNghe control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor danhMucTaiNgheChongOn;
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor phuKienTaiNghe;
 
         /// <summary>
         /// danhMucDangChon control.

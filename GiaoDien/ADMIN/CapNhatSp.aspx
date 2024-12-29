@@ -10,7 +10,7 @@
 <body>
             <div class="formThemSanPham">
     <h1>Thêm sản phẩm</h1>
-    <form runat="server" method="post" action="XuLyThemSanPham.aspx">
+    <form runat="server" method="post" >
         <div>
             <label for="tenSanPhamInput">Tên</label>
             <input runat="server" placeholder="Tên sản phẩm" id="tenSanPhamInput" type="text"/>
@@ -31,9 +31,9 @@
     <div>
         <label for="danhMucSanPhamSelect">Danh mục</label>
         <select runat="server" id="danhMucSanPhamSelect">
-        <option value="danhMuc1">Tai nghe có dây</option>
-        <option value="danhMuc2">Tai nghe không dây</option>
-        <option value="danhMuc3">Tai nghe chống ồn</option>
+     <option value="#EarBuds">#EarBuds</option>
+<option value="#HeadPhones">#HeadPhones</option>
+<option value="#Accessory">#Accessory</option>
         </select>
     </div>
     <button class="buttonSubmitForm">Cập nhật</button>

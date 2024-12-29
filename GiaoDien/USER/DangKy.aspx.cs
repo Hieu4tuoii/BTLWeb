@@ -19,8 +19,10 @@ namespace BTLWebCoBan.GiaoDien.USER
                 string hoVaTen = Request.Form.Get("txtHoVaTen");
                 string sdt = Request.Form.Get("sdt");
                 string matKhau = Request.Form.Get("txtmatkhau");
+                string ngaySinh = Request.Form.Get("ngaySinh");
+                string soThich = Request.Form.Get("hobbies");
                 //new ra user mới
-                User newUser = new User(hoVaTen, sdt, matKhau, false);
+                User newUser = new User(hoVaTen, sdt, matKhau, false, ngaySinh, soThich);
                 //them user vao application
                 List<User> dsUserTrongApplication = (List<User>)Application["listUsers"];
                 dsUserTrongApplication.Add(newUser);

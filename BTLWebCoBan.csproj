@@ -67,30 +67,65 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\CSS\ChiTietSanPham.css" />
     <Content Include="Assets\CSS\DangNhap_DangKy.css" />
     <Content Include="Assets\CSS\DanhMucSanPham.css" />
+    <Content Include="Assets\CSS\GioHang.css" />
     <Content Include="Assets\CSS\Index.css" />
     <Content Include="Assets\CSS\ThemVaCapNhatSanPham.css" />
-    <Content Include="Assets\HinhAnh\06c11151-4dfb-4a88-83c4-fed9c4c29d9alogo.png" />
-    <Content Include="Assets\HinhAnh\33d2ddff-6d1b-423f-ad94-2cb972cc6f9alogo.png" />
-    <Content Include="Assets\HinhAnh\4271f787-750f-481e-b36c-df5c76e191d2logo.png" />
-    <Content Include="Assets\HinhAnh\5b8606e8-b7f6-49ff-b14d-40f7ac3576aalogo.png" />
-    <Content Include="Assets\HinhAnh\69609aba-b0b3-4ebf-ba7b-5c25891b5a3blogo.png" />
-    <Content Include="Assets\HinhAnh\e1edc589-ec59-4bf5-a555-27a6cdb612d8logo.png" />
+    <Content Include="Assets\CSS\TimKiemSanPham.css" />
+    <Content Include="Assets\CSS\TrangChu.css" />
+    <Content Include="Assets\HinhAnh\AppStore.png" />
+    <Content Include="Assets\HinhAnh\banner1.jpg" />
+    <Content Include="Assets\HinhAnh\banner2.jpg" />
+    <Content Include="Assets\HinhAnh\bud5.png" />
+    <Content Include="Assets\HinhAnh\buds3.jpg" />
+    <Content Include="Assets\HinhAnh\galaxybud2pro.jpg" />
+    <Content Include="Assets\HinhAnh\GGPlay.png" />
+    <Content Include="Assets\HinhAnh\payment.png" />
+    <Content Include="Assets\HinhAnh\pk1.jpg" />
+    <Content Include="Assets\HinhAnh\pk2.png" />
+    <Content Include="Assets\HinhAnh\pk4.jpg" />
+    <Content Include="Assets\HinhAnh\sonyLinkBuds.jpg" />
+    <Content Include="Assets\HinhAnh\sp1.jpg" />
+    <Content Include="Assets\HinhAnh\sp10.jpg" />
+    <Content Include="Assets\HinhAnh\sp11.jpg" />
+    <Content Include="Assets\HinhAnh\sp12.jpg" />
+    <Content Include="Assets\HinhAnh\sp13.jpg" />
+    <Content Include="Assets\HinhAnh\sp14.jpg" />
+    <Content Include="Assets\HinhAnh\sp2.jpg" />
+    <Content Include="Assets\HinhAnh\sp3.jpg" />
+    <Content Include="Assets\HinhAnh\sp4.jpg" />
+    <Content Include="Assets\HinhAnh\sp5.jpg" />
+    <Content Include="Assets\HinhAnh\sp6.jpg" />
+    <Content Include="Assets\HinhAnh\sp7.jpg" />
+    <Content Include="Assets\HinhAnh\sp8.jpg" />
+    <Content Include="Assets\HinhAnh\sp9.jpg" />
+    <Content Include="Assets\LOGO\5.png" />
+    <Content Include="Assets\LOGO\SUhouse.png" />
     <Content Include="GiaoDien\ADMIN\Admin.aspx" />
     <Content Include="Assets\CSS\Admin.css" />
     <Content Include="GiaoDien\ADMIN\CapNhatSp.aspx" />
+    <Content Include="GiaoDien\ADMIN\DSUser.aspx" />
     <Content Include="GiaoDien\ADMIN\ThemSP.aspx" />
     <Content Include="GiaoDien\ADMIN\XuLyXoaSanPham.aspx" />
+    <Content Include="GiaoDien\USER\ChiTietSanPham.aspx" />
     <Content Include="GiaoDien\USER\DangKy.aspx" />
     <Content Include="GiaoDien\USER\DangNhap.aspx" />
     <Content Include="GiaoDien\USER\DanhMucSanPham.aspx" />
+    <Content Include="GiaoDien\USER\GioHang.aspx" />
+    <Content Include="GiaoDien\USER\TimKiemSanPham.aspx" />
+    <Content Include="GiaoDien\USER\TrangChu.aspx" />
     <Content Include="GiaoDien\USER\XuLyDangXuat.aspx" />
+    <Content Include="GiaoDien\USER\XuLyGiamGioHang.aspx" />
+    <Content Include="GiaoDien\USER\XuLyHuyGioHang.aspx" />
+    <Content Include="GiaoDien\USER\XuLyTangGioHang.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DoiTuong\SanPham.cs" />
+    <Compile Include="DoiTuong\SanPhamGioHang.cs" />
     <Compile Include="DoiTuong\User.cs" />
     <Compile Include="GiaoDien\ADMIN\Admin.aspx.cs">
       <DependentUpon>Admin.aspx</DependentUpon>
@@ -106,6 +141,13 @@
     <Compile Include="GiaoDien\ADMIN\CapNhatSp.aspx.designer.cs">
       <DependentUpon>CapNhatSp.aspx</DependentUpon>
     </Compile>
+    <Compile Include="GiaoDien\ADMIN\DSUser.aspx.cs">
+      <DependentUpon>DSUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GiaoDien\ADMIN\DSUser.aspx.designer.cs">
+      <DependentUpon>DSUser.aspx</DependentUpon>
+    </Compile>
     <Compile Include="GiaoDien\ADMIN\ThemSP.aspx.cs">
       <DependentUpon>ThemSP.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -119,6 +161,13 @@
     </Compile>
     <Compile Include="GiaoDien\ADMIN\XuLyXoaSanPham.aspx.designer.cs">
       <DependentUpon>XuLyXoaSanPham.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GiaoDien\USER\ChiTietSanPham.aspx.cs">
+      <DependentUpon>ChiTietSanPham.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GiaoDien\USER\ChiTietSanPham.aspx.designer.cs">
+      <DependentUpon>ChiTietSanPham.aspx</DependentUpon>
     </Compile>
     <Compile Include="GiaoDien\USER\DangKy.aspx.cs">
       <DependentUpon>DangKy.aspx</DependentUpon>
@@ -141,6 +190,27 @@
     <Compile Include="GiaoDien\USER\DanhMucSanPham.aspx.designer.cs">
       <DependentUpon>DanhMucSanPham.aspx</DependentUpon>
     </Compile>
+    <Compile Include="GiaoDien\USER\GioHang.aspx.cs">
+      <DependentUpon>GioHang.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GiaoDien\USER\GioHang.aspx.designer.cs">
+      <DependentUpon>GioHang.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GiaoDien\USER\TimKiemSanPham.aspx.cs">
+      <DependentUpon>TimKiemSanPham.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GiaoDien\USER\TimKiemSanPham.aspx.designer.cs">
+      <DependentUpon>TimKiemSanPham.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GiaoDien\USER\TrangChu.aspx.cs">
+      <DependentUpon>TrangChu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GiaoDien\USER\TrangChu.aspx.designer.cs">
+      <DependentUpon>TrangChu.aspx</DependentUpon>
+    </Compile>
     <Compile Include="GiaoDien\USER\XuLyDangXuat.aspx.cs">
       <DependentUpon>XuLyDangXuat.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -148,12 +218,34 @@
     <Compile Include="GiaoDien\USER\XuLyDangXuat.aspx.designer.cs">
       <DependentUpon>XuLyDangXuat.aspx</DependentUpon>
     </Compile>
+    <Compile Include="GiaoDien\USER\XuLyGiamGioHang.aspx.cs">
+      <DependentUpon>XuLyGiamGioHang.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GiaoDien\USER\XuLyGiamGioHang.aspx.designer.cs">
+      <DependentUpon>XuLyGiamGioHang.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GiaoDien\USER\XuLyHuyGioHang.aspx.cs">
+      <DependentUpon>XuLyHuyGioHang.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GiaoDien\USER\XuLyHuyGioHang.aspx.designer.cs">
+      <DependentUpon>XuLyHuyGioHang.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GiaoDien\USER\XuLyTangGioHang.aspx.cs">
+      <DependentUpon>XuLyTangGioHang.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GiaoDien\USER\XuLyTangGioHang.aspx.designer.cs">
+      <DependentUpon>XuLyTangGioHang.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\HinhAnh\sp1 %282%29.avif" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

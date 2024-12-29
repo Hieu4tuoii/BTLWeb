@@ -28,9 +28,9 @@
     <div>
        <label for="danhMucSanPhamSelect">Danh mục</label>
        <select name="danhMucSanPhamSelect" id="danhMucSanPhamSelect">
-    <option value="Tai nghe có dây">Tai nghe có dây</option>
-    <option value="Tai nghe không dây">Tai nghe không dây</option>
-    <option value="Tai nghe chống ồn">Tai nghe chống ồn</option>
+    <option value="#EarBuds">#EarBuds</option>
+    <option value="#HeadPhones">#HeadPhones</option>
+    <option value="#Accessory">#Accessory</option>
 </select>
     </div>
     <button type="submit" class="buttonSubmitForm">Thêm ngay</button>

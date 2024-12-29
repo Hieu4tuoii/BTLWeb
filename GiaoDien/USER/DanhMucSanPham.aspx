@@ -1,93 +1,59 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="DanhMucSanPham.aspx.cs" Inherits="BTLWebCoBan.GiaoDien.USER.DanhMucSanPham" %>
-
 <!DOCTYPE html>
-
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Danh Mục Sản Phẩm</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../../Assets/CSS/DanhMucSanPham.css" />
      <link rel="stylesheet" href="../../Assets/CSS/Index.css" />
 </head>
 <body>
-    <header class="header">
-      <div class="logo">
-        <img src="../Tainguyen/SUhouse.png" alt="logo" class="logo" />
-      </div>
-      <div class="menu">
-        <ul id="navbar">
-          <ul id="navbar">
-            <li><a href="../TrangChu/Trangchu.html">Trang chủ</a></li>
-            <li><a href="productList.html">Sản phẩm</a></li>
-            <li><a href="VeChungToi.html">Về chúng tôi</a></li>
-            <li><a href="Blog.html">Blog</a></li>
-            <li><a href="Lienhe.html">Liên hệ</a></li>
-          </ul>
-        </ul>
-      </div>
-      <div class="search">
-        <div class="search_bar">
-          <input
-            type="text"
-            id="search"
-            name="search"
-            placeholder="Tìm kiếm..."
-          />
-          <button id="ButtonSearch" class="btnSearch" onclick="btnSearch_click">
-            Tìm Kiếm
-          </button>
-        </div>
-      </div>
-      <div id="user">
-        <div class="avatar">
-          <a
-            href="DangNhap.aspx"
-            id="btnDangNhap"
-            name="btnDangNhap"
-            class="btnDangNhap"
-              runat="server"
-          >
-            Đăng nhập
-          </a>
-            <span runat="server" id="tenNguoiDungDangNhap">
-
-            </span>
-            <a  runat="server" style="color: red; text-decoration: underline" id="nutDangXuat" href="XuLyDangXuat.aspx">thoát</a>
-        </div>
-        <div class="cart_icon" onclick="Location">
-          <a href="#"
-            ><svg
-              style="width: 20px; height: 20px"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 576 512"
-            >
-              <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-              <path
-                d="M0 24C0 10.7 10.7 0 24 0L69.5 0c22 0 41.5 12.8 50.6 32l411 0c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3l-288.5 0 5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5L488 336c13.3 0 24 10.7 24 24s-10.7 24-24 24l-288.3 0c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5L24 48C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"
-              /></svg
-          ></a>
-        </div>
-      </div>
-    </header>
-
-   <%--bat dau danh sach sản pham--%>
-    <div class="banner-sale">
-      <div class="banner-sale__inner">
-        <p class="banner-sale__title">GIẢM GIÁ ĐẾN 10%</p>
-        <p class="banner-sale__description">
-          Lần đầu mua hàng bằng thẻ MB Bank
-        </p>
-      </div>
+     <%---------------------------------------------HEADER----------------------------------------------------------%>
+<header class="header">
+    <div class="logo">
+        <img src="../../Assets/LOGO/SUhouse.png" alt="logo" class="logo"/>
     </div>
+    <div class="menu">
+        <ul id="navbar">
+            <li><a href="TrangChu.aspx">Trang chủ</a></li>
+            <li><a href="DanhMucSanPham.aspx">Sản phẩm</a></li>
+            <li><a href="TrangChu.aspx">Về chúng tôi</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Liên hệ</a></li>
+        </ul>
+    </div>
+    <div class="search">
+        <div class="search-bar">
+            <form  method="get" action="TimKiemSanPham.aspx"> 
+            <input id="search" name="search"  placeholder="Tìm kiếm sản phẩm..." type="text"/>
+            <button id="ButtonSearch" class="btnSearch">Tìm kiếm</button>
+      </form>
+        </div> 
+    </div>
+    <div id="user">
+        <div class="avatar">
+           <a href="DangNhap.aspx" id="btnDangNhap" name="btnDangNhap" class="btnDangNhap" runat="server">Đăng nhập</a>
+          <span runat="server" id="tenNguoiDungDangNhap"></span>
+            <a runat="server" style="color: red; text-decoration: underline" id="nutDangXuat" href="XuLyDangXuat.aspx">Thoát</a>
+        </div>
+        <div class="cart_icon" onclick="location.href = 'Giohang.aspx';">
+            <a href="GioHang.aspx"><svg style="width: 20px; height: 20px;"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 576 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path
+                        d="M0 24C0 10.7 10.7 0 24 0L69.5 0c22 0 41.5 12.8 50.6 32l411 0c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3l-288.5 0 5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5L488 336c13.3 0 24 10.7 24 24s-10.7 24-24 24l-288.3 0c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5L24 48C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z" /></svg></a>
+        </div>
+    </div>
+</header>
     <%--danh sách các danh mục--%>
     <div class="category-list">
       <h2 class="category-list__title">DANH MỤC SẢN PHẨM</h2>
       <div class="category-list__buttons">
         <div class="category-list__buttons-inner">
-          <a href="DanhMucSanPham.aspx?danh-muc=tai-nghe-co-day" id="danhMucTaiNgheCoDay" runat="server" class="category-list__button">
+          <a href="DanhMucSanPham.aspx?danh-muc=EarBuds" id="danhMucTaiNgheCoDay" runat="server" class="category-list__button">
             Tai nghe có dây
           </a>
-          <a href="DanhMucSanPham.aspx?danh-muc=tai-nghe-khong-day" id="danhMucTaiNgheKhongDay" runat="server"  class="category-list__button">Tai nghe không dây</a>
-          <a href="DanhMucSanPham.aspx?danh-muc=tai-nghe-chong-on" id="danhMucTaiNgheChongOn" runat="server"  class="category-list__button">Tai nghe chống ồn</a>
+          <a href="DanhMucSanPham.aspx?danh-muc=HeadPhones" id="danhMucTaiNgheKhongDay" runat="server"  class="category-list__button">Tai nghe không dây</a>
+          <a href="DanhMucSanPham.aspx?danh-muc=Accessory" id="phuKienTaiNghe" runat="server"  class="category-list__button">Phụ kiên tai nghe</a>
         </div>
       </div>
     </div>
@@ -106,7 +72,7 @@
       </div>
     </section>
     <%--footer--%>
-    <footer id="my_footer">
+    <%--<footer id="my_footer">
         <div class="col">
             <img class="logo" src="../Tainguyen/SUhouse.png" alt="logo">
             <h4>© Copyright 2024 | SuHouse Shop | All Rights Reserved</h4>
@@ -153,6 +119,6 @@
             <p>Secured Payment Gateways</p>
             <img src="../Tainguyen/payment.png" alt="">
         </div>
-    </footer>
+    </footer>--%>
 </body>
 </html>

@@ -1,0 +1,790 @@
+﻿
+footer{
+    display: none;
+}
+
+body {
+    width: 100vw;
+}
+
+.slide {
+    width: 100%;
+    height: 35vw;
+    /* background-image: url(../Tainguyen/headphones_headset_mobile_meizu-542234.jpg); */
+    background-size: cover;
+    background-position: bottom;
+    background-image: linear-gradient(rgba(171, 139, 139, 0.5), rgba(0, 0, 0, 0.5)), url(../HinhAnh/banner2.jpg);
+}
+
+.slide_content {
+    margin-top: 300px;
+    float: left;
+    margin-left: 150px;
+    letter-spacing: 1px;
+}
+
+    .slide_content h4 {
+        font-size: 25px;
+        color: white;
+        margin-top: 15px;
+    }
+
+    .slide_content h3 {
+        font-size: 16px;
+        color: white;
+        margin-top: 15px;
+    }
+
+    .slide_content h1 {
+        font-size: 40px;
+        color: #23527c;
+        margin-top: 15px;
+    }
+
+#product1 {
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    padding: 0 40px;
+}
+
+    #product1 h1 {
+        font-size: 36px;
+        margin-top: 24px;
+        font-weight: lighter;
+    }
+
+    #product1 .big_container {
+        display: flex;
+        padding-top: 24px;
+        flex-wrap: wrap;
+        gap: 35px;
+    }
+
+/*    pc lớn*/
+    #product1 .sp_box {
+        width: 23%; /* responesive */
+        padding: 10px 12px;
+        border: 1px solid #0f0f0f;
+        border-radius: 25px;
+        cursor: pointer;
+        margin: 20px 0;
+        transition: 0.2s ease;
+        position: relative;
+    }
+
+.sp_box a:hover {
+    cursor: pointer;
+}
+
+#product1 .sp_box:hover {
+    border-color: #000000;
+    box-shadow: 20px 20px 30px 0 rgba(0, 0, 0, 0.1);
+}
+
+#product1 .sp_box img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+#product1 .sp_box .sp_content {
+    text-align: start;
+    padding: 10px 0;
+}
+
+    #product1 .sp_box .sp_content span {
+        font-size: 12px;
+        color: #79a5c0;
+    }
+
+    #product1 .sp_box .sp_content h4 {
+        color: #0f0f0f;
+        font-size: 18px;
+    }
+
+    #product1 .sp_box .sp_content h3 {
+        padding-top: 4px;
+        color: #000000;
+        font-size: 20px;
+        text-decoration: underline;
+    }
+
+#product1 .cart {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #000000;
+    border-radius: 50px;
+    position: absolute;
+    font-size: 10px;
+    bottom: 16px;
+    right: 12px;
+    line-height: 40px;
+    color: #c9d6df;
+}
+
+    #product1 .cart:hover {
+        background-color: #c9d6df;
+        color: white;
+    }
+
+#product2 {
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    padding: 0 40px;
+}
+
+    #product2 h1 {
+        font-size: 36px;
+        margin-top: 24px;
+        font-weight: lighter;
+    }
+
+    #product2 .big_container {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 24px;
+        flex-wrap: wrap;
+    }
+
+    #product2 .sp_box {
+        width: 23%; /* responesive */
+        padding: 10px 12px;
+        border: 1px solid #0f0f0f;
+        border-radius: 25px;
+        cursor: pointer;
+        margin: 20px 0;
+        transition: 0.2s ease;
+        position: relative;
+    }
+
+.sp_box a:hover {
+    cursor: pointer;
+}
+
+#product2 .sp_box:hover {
+    border-color: #000000;
+    box-shadow: 20px 20px 30px 0 rgba(0, 0, 0, 0.1);
+}
+
+#product2 .sp_box img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+#product2 .sp_box .sp_content {
+    text-align: start;
+    padding: 10px 0;
+}
+
+    #product2 .sp_box .sp_content span {
+        font-size: 12px;
+        color: #79a5c0;
+    }
+
+    #product2 .sp_box .sp_content h4 {
+        color: #0f0f0f;
+        font-size: 18px;
+    }
+
+    #product2 .sp_box .sp_content h3 {
+        padding-top: 4px;
+        color: #000000;
+        font-size: 20px;
+        text-decoration: underline;
+    }
+
+#product2 .cart {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #000000;
+    border-radius: 50px;
+    position: absolute;
+    font-size: 10px;
+    bottom: 16px;
+    right: 12px;
+    line-height: 40px;
+    color: #c9d6df;
+}
+
+    #product2 .cart:hover {
+        background-color: #c9d6df;
+        color: white;
+    }
+
+#product3 {
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    padding: 0 40px;
+}
+
+    #product3 h1 {
+        font-size: 36px;
+        margin-top: 24px;
+        font-weight: lighter;
+    }
+
+    #product3 .big_container {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 24px;
+        flex-wrap: wrap;
+    }
+
+    #product3 .sp_box {
+        width: 23%; /* responesive */
+        padding: 10px 12px;
+        border: 1px solid #0f0f0f;
+        border-radius: 25px;
+        cursor: pointer;
+        margin: 20px 0;
+        transition: 0.2s ease;
+        position: relative;
+    }
+
+.sp_box a:hover {
+    cursor: pointer;
+}
+
+#product3 .sp_box:hover {
+    border-color: #000000;
+    box-shadow: 20px 20px 30px 0 rgba(0, 0, 0, 0.1);
+}
+
+#product3 .sp_box img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+#product3 .sp_box .sp_content {
+    text-align: start;
+    padding: 10px 0;
+}
+
+    #product3 .sp_box .sp_content span {
+        font-size: 12px;
+        color: #79a5c0;
+    }
+
+    #product3 .sp_box .sp_content h4 {
+        color: #0f0f0f;
+        font-size: 18px;
+    }
+
+    #product3 .sp_box .sp_content h3 {
+        padding-top: 4px;
+        color: #000000;
+        font-size: 20px;
+        text-decoration: underline;
+    }
+
+#product3 .cart {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #000000;
+    border-radius: 50px;
+    position: absolute;
+    font-size: 10px;
+    bottom: 16px;
+    right: 12px;
+    line-height: 40px;
+    color: #c9d6df;
+}
+
+    #product3 .cart:hover {
+        background-color: #c9d6df;
+        color: white;
+    }
+
+.center_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    .center_button .custom_button {
+        border: none;
+        cursor: pointer;
+        background: none;
+        color: white;
+        transition: 0.5s;
+        font-size: 24px;
+        padding: 10px 20px;
+        border-radius: 30px;
+        background-color: #000000;
+        margin: 20px;
+    }
+
+        .center_button .custom_button:hover {
+            background-color: #c9d6df;
+            color: black;
+        }
+
+#sm_banner {
+    display: flex;
+    margin: 24px 0;
+    width: 100%;
+    height: 500px;
+    background-image: url(../../Assets/HinhAnh/banner1.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+    #sm_banner .banner_box h4 {
+        font-size: 16px;
+        color: white;
+    }
+
+    #sm_banner .banner_box h1 {
+        font-size: 32px;
+        color: white;
+        margin-bottom: 18px;
+    }
+
+    #sm_banner button {
+        border: none;
+        cursor: pointer;
+        background: none;
+        color: #000000;
+        transition: 0.5s;
+        font-size: 24px;
+        padding: 10px 20px;
+        border-radius: 30px;
+        background-color: white;
+    }
+
+        #sm_banner button:hover {
+            background-color: black;
+            color: white;
+            transform: scale(1.1);
+        }
+
+    #sm_banner .banner_box {
+        margin-top: 250px;
+        float: left;
+        margin-left: 50px;
+        letter-spacing: 2px;
+    }
+
+#service {
+    text-align: center;
+}
+
+    #service h1 {
+        font-size: 36px;
+        margin-top: 24px;
+        font-weight: lighter;
+    }
+
+    #service .big_container {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 24px;
+        padding-bottom: 16px;
+        flex-wrap: wrap;
+        padding: 0px 40px;
+    }
+
+    #service .sp_box {
+        width: 25%;
+        min-width: 250px;
+        padding: 10px 10px;
+        border: 1px solid #0f0f0f;
+        border-radius: 25px;
+        cursor: pointer;
+        margin: 20px 0;
+        transition: 0.2s ease;
+        position: relative;
+    }
+
+        #service .sp_box .sp_content {
+            text-align: start;
+            padding: 10px 0;
+            margin-left: 8px;
+            transition: .8s ease;
+        }
+
+        #service .sp_box:hover {
+            background-color: #c9d6df;
+            border: none;
+            color: black;
+        }
+
+    #service .sp_content a {
+        float: right;
+        margin-top: 20px;
+    }
+
+#product1 .blog_container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 24px;
+    flex-wrap: wrap;
+    padding: 0px -5px;
+}
+
+#product1 .blog_box {
+    width: 30%;
+    padding: 10px 12px;
+    border: 1px solid #0f0f0f;
+    border-radius: 25px;
+    cursor: pointer;
+    margin: 20px 0;
+    transition: 0.2s ease;
+    position: relative;
+}
+
+    #product1 .blog_box img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 25px;
+    }
+
+    #product1 .blog_box:hover {
+        transform: scale(1.1);
+    }
+
+    #product1 .blog_box .blog_content {
+        text-align: start;
+        padding: 10px 0;
+    }
+
+        #product1 .blog_box .blog_content span {
+            font-size: 12px;
+            color: #79a5c0;
+        }
+
+        #product1 .blog_box .blog_content h4 {
+            color: #0f0f0f;
+            font-size: 22px;
+        }
+
+            #product1 .blog_box .blog_content h4:hover {
+                color: #c9d6df;
+            }
+
+        #product1 .blog_box .blog_content p {
+            font-size: 14px;
+            color: #0f0f0f;
+        }
+
+/*responsive cho lap*/
+@media screen and (max-width: 1024px) {
+    footer{
+        display: none;
+    }
+    header {
+        height: 70px;
+    }
+
+    .logo {
+        height: 70px;
+    }
+
+    #navbar li {
+        padding: 0 10px;
+    }
+
+        #navbar li a {
+            font-size: 16px;
+        }
+
+    .search input[type="text"] {
+        width: 250px;
+    }
+
+    .search .btnSearch {
+        padding: 10px 20px;
+    }
+
+    #user .avatar a {
+        margin-right: 20px;
+    }
+
+    .btnDangNhap {
+        font-size: 14px;
+        margin-right: 20px;
+    }
+
+    .cart_icon {
+        padding: 4px 8px;
+        font-size: 20px;
+        margin-right: 10px;
+    }
+
+    .slide {
+        height: 40vw;
+    }
+
+    .slide_content {
+        margin-top: 200px;
+        margin-left: 100px;
+    }
+
+        .slide_content h4 {
+            font-size: 20px;
+        }
+
+        .slide_content h3 {
+            font-size: 14px;
+        }
+
+        .slide_content h1 {
+            font-size: 36px;
+        }
+
+    #product1 h1 {
+        font-size: 32px;
+    }
+
+
+    #product1 .sp_box,
+    #product2 .sp_box,
+    #product3 .sp_box {
+        width: 30%; /* responsive*/
+    }
+
+        #product1 .sp_box img {
+            height: 250px;
+        }
+
+        #product1 .sp_box .sp_content h3 {
+            font-size: 18px;
+        }
+
+    #product2 h1 {
+        font-size: 32px;
+    }
+
+   
+
+        #product2 .sp_box img {
+            height: 250px;
+        }
+
+        #product2 .sp_box .sp_content h3 {
+            font-size: 18px;
+        }
+
+    #product3 h1 {
+        font-size: 32px;
+    }
+
+  
+
+        #product3 .sp_box img {
+            height: 250px;
+        }
+
+        #product3 .sp_box .sp_content h3 {
+            font-size: 18px;
+        }
+
+    .center_button .custom_button {
+        font-size: 20px;
+        padding: 8px 16px;
+    }
+}
+/*responsive cho tablet*/
+@media screen and (max-width: 798px) {
+    footer {
+        display: none;
+    }
+    header {
+        height: 70px;
+    }
+
+    .logo {
+        height: 70px;
+    }
+
+    #navbar li {
+        padding: 0 10px;
+    }
+
+        #navbar li a {
+            font-size: 14px; /* Giảm font-size cho phù hợp */
+        }
+
+    .search input[type="text"] {
+        width: 200px; /* Điều chỉnh độ rộng cho màn hình nhỏ hơn */
+    }
+
+    .search .btnSearch {
+        padding: 8px 16px;
+    }
+
+    #user .avatar a {
+        margin-right: 15px;
+    }
+
+    .btnDangNhap {
+        font-size: 12px;
+        margin-right: 15px;
+    }
+
+    .cart_icon {
+        padding: 3px 6px;
+        font-size: 18px;
+        margin-right: 8px;
+    }
+
+    .slide {
+        height: 45vw; /* Điều chỉnh lại chiều cao */
+    }
+
+    .slide_content {
+        margin-top: 150px;
+        margin-left: 80px;
+    }
+
+        .slide_content h4 {
+            font-size: 18px;
+        }
+
+        .slide_content h3 {
+            font-size: 12px;
+        }
+
+        .slide_content h1 {
+            font-size: 32px;
+        }
+
+    #product1 h1,
+    #product2 h1,
+    #product3 h1 {
+        font-size: 28px; /* Giảm kích thước tiêu đề */
+    }
+
+    #product1 .sp_box,
+    #product2 .sp_box,
+    #product3 .sp_box {
+        width: 45%; /* responsive*/
+    }
+
+        #product1 .sp_box img,
+        #product2 .sp_box img,
+        #product3 .sp_box img {
+            height: 200px; /* Giảm chiều cao của hình ảnh */
+        }
+
+        #product1 .sp_box .sp_content h3,
+        #product2 .sp_box .sp_content h3,
+        #product3 .sp_box .sp_content h3 {
+            font-size: 16px;
+        }
+
+    .center_button .custom_button {
+        font-size: 18px;
+        padding: 6px 12px;
+    }
+}
+/*responsive cho mobile*/
+@media screen and (max-width: 480px) {
+    footer {
+        display: none;
+    }
+    header {
+        height: 60px;
+    }
+
+    .logo {
+        height: 60px;
+    }
+
+    #navbar li {
+        padding: 0 5px;
+    }
+
+        #navbar li a {
+            font-size: 12px; /* Giảm font-size cho phù hợp với màn hình nhỏ */
+        }
+
+        #navbar li a {
+            display: none;
+        }
+
+    .search input[type="text"] {
+        width: 150px; /* Thu nhỏ độ rộng để vừa với màn hình */
+    }
+
+    .search .btnSearch {
+        padding: 6px 12px;
+    }
+
+    #user .avatar a {
+        margin-right: 10px;
+    }
+
+    .btnDangNhap {
+        font-size: 12px;
+        margin-right: 10px;
+    }
+
+    .cart_icon {
+        padding: 2px 4px;
+        font-size: 16px;
+        margin-right: 5px;
+    }
+
+    .slide {
+        height: 50vw; /* Điều chỉnh chiều cao để phù hợp với màn hình điện thoại */
+    }
+
+    .slide_content {
+        margin-top: 100px;
+        margin-left: 40px;
+    }
+
+        .slide_content h4 {
+            font-size: 16px;
+        }
+
+        .slide_content h3 {
+            font-size: 10px;
+        }
+
+        .slide_content h1 {
+            font-size: 28px;
+        }
+
+    #product1 h1,
+    #product2 h1,
+    #product3 h1 {
+        font-size: 24px; /* Giảm kích thước tiêu đề */
+    }
+
+    #product1 .sp_box,
+    #product2 .sp_box,
+    #product3 .sp_box {
+        width: 100%; /* Đặt width là 100% cho mỗi box để dễ xem hơn */
+        margin-bottom: 10px; /* Thêm khoảng cách giữa các box */
+    }
+
+        #product1 .sp_box img,
+        #product2 .sp_box img,
+        #product3 .sp_box img {
+            height: 150px; /* Giảm chiều cao của hình ảnh để phù hợp với màn hình nhỏ */
+        }
+
+        #product1 .sp_box .sp_content h3,
+        #product2 .sp_box .sp_content h3,
+        #product3 .sp_box .sp_content h3 {
+            font-size: 14px;
+        }
+
+    .center_button .custom_button {
+        font-size: 16px;
+        padding: 4px 8px;
+    }
+}
